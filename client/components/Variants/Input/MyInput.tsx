@@ -1,145 +1,112 @@
-'use client';
+"use client";
 
-import { extendVariants, Input } from '@nextui-org/react';
+import { extendVariants, Input } from "@nextui-org/react";
 
 export const MyInput = extendVariants(Input, {
   variants: {
     color: {
-      search: {
+      contact: {
         inputWrapper: [
-          'bg-white',
-          'border',
-          'shadow-none',
-          'transition-colors',
-          'focus-within:bg-white',
-          'data-[hover=true]:border-blue-300',
-          'data-[hover=true]:bg-white',
-          'group-data-[focus=true]:border-blue-600',
-          'group-data-[focus=true]:bg-white',
-          'dark:bg-zinc-900',
-          'dark:border-zinc-800',
-          'dark:data-[hover=true]:bg-zinc-900',
+          "bg-neutral-200 data-[hover=true]:bg-neutral-200 group-data-[focus=true]:bg-neutral-200",
         ],
-        input: [
-          'text-zinc-800',
-          'placeholder:text-zinc-400',
-          'dark:text-zinc-400',
-          'dark:placeholder:text-zinc-600',
-        ],
+        innerWrapper: [""],
+        input: ["text-white"],
       },
       stone: {
-        inputWrapper: [
-          'bg-gray-50',
-          'border',
-          'shadow-none',
-          'transition-colors',
-          'focus-within:bg-white',
-          'data-[hover=true]:border-blue-300',
-          'data-[hover=true]:bg-white',
-          'group-data-[focus=true]:border-blue-600',
-          'dark:bg-zinc-900',
-          'dark:border-zinc-800',
-          'dark:data-[hover=true]:bg-zinc-900',
-          'dark:focus-within:bg-red-900',
-        ],
+        inputWrapper: [],
         input: [
-          'text-zinc-800',
-          'placeholder:text-red-500',
-          'dark:text-zinc-400',
-          'dark:placeholder:text-zinc-600',
+          "text-zinc-800",
+          "placeholder:text-red-500",
+          "dark:text-zinc-400",
+          "dark:placeholder:text-zinc-600",
         ],
       },
     },
     size: {
       xs: {
-        inputWrapper: 'h-unit-6 min-h-unit-6 px-1',
-        input: 'text-tiny',
+        inputWrapper: "h-unit-6 min-h-unit-6 px-1",
+        input: "text-tiny",
       },
       md: {
-        inputWrapper: 'h-unit-10 min-h-unit-10',
-        input: 'text-small',
+        inputWrapper: "h-unit-10 min-h-unit-10",
+        input: "text-small",
       },
       lg: {
-        inputWrapper: 'h-unit-12 min-h-unit-12 ',
-        input: 'text-medium',
+        inputWrapper: "h-unit-12 min-h-unit-12 ",
+        input: "text-medium",
       },
       xl: {
-        inputWrapper: 'h-unit-14 min-h-unit-14',
-        input: 'text-medium',
+        inputWrapper: "h-unit-14 min-h-unit-14",
+        input: "text-medium",
       },
       unitSize: {
-        inputWrapper: 'h-unit-12 min-h-unit-12 pl-3 pr-0.5',
-        input: 'text-medium',
+        inputWrapper: "h-unit-12 min-h-unit-12 pl-3 pr-0.5",
+        input: "text-medium",
       },
       search: {
-        inputWrapper: 'h-unit-11 text-small gap-unit-2 rounded-small w-full',
+        inputWrapper: "h-unit-11 text-small gap-unit-2 rounded-small w-full",
       },
     },
     radius: {
       xs: {
-        inputWrapper: 'rounded',
+        inputWrapper: "rounded",
       },
       sm: {
-        inputWrapper: 'rounded-[4px]',
+        inputWrapper: "rounded-[4px]",
       },
       lg: {
-        inputWrapper: '',
+        inputWrapper: "",
       },
     },
     textSize: {
       base: {
-        input: 'text-base',
+        input: "text-base",
       },
     },
-    removeLabel: {
-      true: {
-        label: 'hidden',
-      },
-      false: {},
-    },
+
     isDisabled: {
       true: {
-        inputWrapper: [''],
+        inputWrapper: [""],
       },
     },
     isReadOnly: {
       true: {
-        base: ['opacity-100'],
+        base: ["opacity-100"],
 
         inputWrapper: [
-          'bg-gray-100',
-          'shadow-none',
-          'transition-colors',
-          '!opacity-100',
+          "bg-gray-100",
+          "shadow-none",
+          "transition-colors",
+          "!opacity-100",
         ],
         input: [
-          'text-black',
-          'placeholder:text-black',
+          "text-black",
+          "placeholder:text-black",
 
-          'dark:text-black',
-          'dark:placeholder:text-black',
+          "dark:text-black",
+          "dark:placeholder:text-black",
         ],
       },
       false: {
         inputWrapper: [
-          'bg-white',
-          'shadow-none',
-          'transition-colors',
-          'opacity-100',
+          "bg-white",
+          "shadow-none",
+          "transition-colors",
+          "opacity-100",
         ],
         input: [
-          'text-black',
-          'placeholder:text-zinc-400',
-          'dark:text-black',
-          'dark:placeholder:text-black',
+          "text-black",
+          "placeholder:text-zinc-400",
+          "dark:text-black",
+          "dark:placeholder:text-black",
         ],
       },
     },
   },
 
   defaultVariants: {
-    color: 'stone',
-    textSize: 'base',
-    size: 'lg',
+    textSize: "base",
+    size: "lg",
+    removeLabel: true,
   },
 });

@@ -15,7 +15,7 @@ export const Call = () => {
   );
 };
 
-export const Facebook = () => {
+export const SocialFacebook = () => {
   return (
     <svg
       width="16"
@@ -32,7 +32,7 @@ export const Facebook = () => {
   );
 };
 
-export const Instagram = () => {
+export const SocialInstagram = () => {
   return (
     <svg
       width="28"
@@ -68,7 +68,7 @@ export const Language = () => {
   );
 };
 
-export const BurgerMenu = () => {
+export const MenuBurger = () => {
   return (
     <svg
       width="16"
@@ -85,7 +85,7 @@ export const BurgerMenu = () => {
   );
 };
 
-export const Close = () => {
+export const MenuClose = () => {
   return (
     <svg
       width="14"

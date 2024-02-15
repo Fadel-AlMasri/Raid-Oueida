@@ -1,3 +1,5 @@
+"use client";
+
 // MyInput.tsx
 import { extendVariants, Textarea } from "@nextui-org/react";
 
@@ -9,38 +11,12 @@ export const MyTextarea = extendVariants(Textarea, {
         // <- add a new color variant
         base: ["justify-start h-full "],
         label: [""],
-
         inputWrapper: [
-          "max-h-none",
-          "justify-start items-start border border-gray-200",
-          "!h-full ",
-          "bg-gray-50",
-          "shadow-none",
-          "transition-colors",
-          "focus-within:bg-white",
-          // input focus
-          "data-[hover=true]:border-blue-300",
-          "data-[hover=true]:bg-white",
-
-          "group-data-[focus=true]:border-blue-600",
-          // dark theme
-          "dark:bg-zinc-900",
-          "dark:border-zinc-800",
-          "dark:data-[hover=true]:bg-zinc-900",
-          "dark:focus-within:bg-red-900",
-          "overflow-scroll",
+          "bg-neutral-200 data-[hover=true]:bg-neutral-200 group-data-[focus=true]:bg-neutral-200",
         ],
         input: [
+          "text-white",
           // <- Input element slot'
-          "max-h-none",
-          " py-1",
-          "h-full",
-          "text-zinc-800",
-          "placeholder:text-zinc-100",
-
-          // dark theme
-          "dark:text-zinc-400",
-          "dark:placeholder:text-zinc-100",
         ],
         description: [],
         errorMessage: [],

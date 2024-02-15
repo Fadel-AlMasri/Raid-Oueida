@@ -13,7 +13,7 @@
   src: url("../public/Fonts/Nexa-Heavy.ttf") format("truetype");
   font-weight: 900;
 }
-
+/* Display */
 .displayLarge {
   font-weight: 700;
   font-style: italic;
@@ -33,6 +33,7 @@
   font-size: 36px;
   line-height: 47.99px;
 }
+/* Title */
 .titleLargeSpaced {
   font-family: "Nexa";
   font-weight: 100;
@@ -60,14 +61,15 @@
   line-height: 28px;
   letter-spacing: 0.1px;
 }
-.label-XLargeBold {
+/*Label */
+.labelXLargeBold {
   font-family: "Nexa";
   font-weight: 900;
   font-size: 22px;
   line-height: 28px;
   letter-spacing: 2px;
 }
-.label-XLargeLight {
+.labelXLargeLight {
   font-family: "Nexa";
   font-weight: 100;
   font-size: 22px;
@@ -75,26 +77,27 @@
   letter-spacing: 2px;
 }
 
-.label-LargeBold {
+.labelLargeBold {
   font-family: "Nexa";
   font-weight: 900;
   font-size: 18px;
   line-height: 20px;
   letter-spacing: 2px;
 }
-.label-Large {
+.labelLarge {
   font-family: "Nexa";
   font-weight: 100;
   font-size: 18px;
   line-height: 20px;
   letter-spacing: 2px;
 }
-.label-Small {
+.labelSmall {
   font-family: "Nexa";
   font-weight: 900;
   font-size: 12px;
   line-height: 20px;
 }
+/* Body */
 .bodyLarge {
   font-family: "Nexa";
   font-weight: 100;
@@ -117,12 +120,14 @@
   letter-spacing: 0.25px;
 }
 @layer components {
+  /* Text */
   .textPrimary {
     @apply text-neutral-50;
   }
   .textHover {
     @apply text-neutral-100;
   }
+  /* Background */
   .surfacePrimary {
     @apply bg-neutral-300;
   }
@@ -132,6 +137,7 @@
   .fillSecondary {
     @apply bg-neutral-200;
   }
+  /* Border */
   .outlinePrimary {
     @apply border-neutral-50;
   }
