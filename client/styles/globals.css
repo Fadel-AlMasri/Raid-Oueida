@@ -1,0 +1,154 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Nexa";
+  src: url("../public/Fonts/Nexa-ExtraLight.ttf") format("truetype");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "Nexa";
+  src: url("../public/Fonts/Nexa-Heavy.ttf") format("truetype");
+  font-weight: 900;
+}
+
+.displayLarge {
+  font-weight: 700;
+  font-style: italic;
+  font-size: 80px;
+  line-height: 96px;
+  letter-spacing: -0.25;
+}
+.displayMedium {
+  font-weight: 600;
+  font-style: italic;
+  font-size: 62px;
+  line-height: 80px;
+}
+.displaySmall {
+  font-weight: 600;
+  font-style: italic;
+  font-size: 36px;
+  line-height: 47.99px;
+}
+.titleLargeSpaced {
+  font-family: "Nexa";
+  font-weight: 100;
+  font-size: 26px;
+  line-height: 34px;
+  letter-spacing: 31%;
+}
+.titleLarge {
+  font-family: "Nexa";
+  font-weight: 100;
+  font-size: 26px;
+  line-height: 34px;
+}
+.titleMedium {
+  font-family: "Nexa";
+  font-weight: 100;
+  font-size: 22px;
+  line-height: 32px;
+  letter-spacing: 0.15;
+}
+.titleSmallBold {
+  font-family: "Nexa";
+  font-weight: 900;
+  font-size: 22px;
+  line-height: 28px;
+  letter-spacing: 0.1px;
+}
+.label-XLargeBold {
+  font-family: "Nexa";
+  font-weight: 900;
+  font-size: 22px;
+  line-height: 28px;
+  letter-spacing: 2px;
+}
+.label-XLargeLight {
+  font-family: "Nexa";
+  font-weight: 100;
+  font-size: 22px;
+  line-height: 28px;
+  letter-spacing: 2px;
+}
+
+.label-LargeBold {
+  font-family: "Nexa";
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 2px;
+}
+.label-Large {
+  font-family: "Nexa";
+  font-weight: 100;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 2px;
+}
+.label-Small {
+  font-family: "Nexa";
+  font-weight: 900;
+  font-size: 12px;
+  line-height: 20px;
+}
+.bodyLarge {
+  font-family: "Nexa";
+  font-weight: 100;
+  font-size: 22px;
+  line-height: 32px;
+  letter-spacing: 0.25px;
+}
+.bodyMedium {
+  font-family: "Nexa";
+  font-weight: 100;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.25px;
+}
+.bodySmall {
+  font-family: "Nexa";
+  font-weight: 100;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+}
+@layer components {
+  .textPrimary {
+    @apply text-neutral-50;
+  }
+  .textHover {
+    @apply text-neutral-100;
+  }
+  .surfacePrimary {
+    @apply bg-neutral-300;
+  }
+  .fillPrimary {
+    @apply bg-neutral-400;
+  }
+  .fillSecondary {
+    @apply bg-neutral-200;
+  }
+  .outlinePrimary {
+    @apply border-neutral-50;
+  }
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
