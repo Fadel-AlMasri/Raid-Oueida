@@ -1,37 +1,80 @@
 import React from "react";
+import PageUI from "./pageUI";
 import { playfair } from "@/public/Fonts/fonts";
 import { MyButton } from "@/components/Variants/Button/MyButton";
 import { MyInput } from "@/components/Variants/Input/MyInput";
 import { MyTextarea } from "@/components/Variants/TextArea/MyTextarea";
-const page = () => {
-  return (
-    <div>
-      <div className="bg-black h-[100px] w-[150px] flex items-center justify-center ml-20">
-        <MyButton color="primary" size="btn" radius="none">
-          Press Me
-        </MyButton>
-      </div>
-      <div>
-        <MyInput color="contact" label="Full Name" radius="none" />
-        <MyTextarea
-          color="stone"
-          label="Message"
-          labelPlacement="inside"
-          radius="none"
-        />
-      </div>
-
-      <MyInput color="contact" type="email" radius="none" label="Email" />
-
-      {/* <MyInput color="contact" radius="none" label="Full Name" /> */}
-      <h1 className="">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem
-        quis quasi et consectetur possimus dolores, fugit at? Veritatis esse
-        nisi animi laboriosam,ccccc eum velit, pariatur molestias, illum
-        dignissimos suscipit obcaecati.
-      </h1>
-    </div>
-  );
+import Card from "@/components/Card/CardUI";
+import {
+  ArtWork1,
+  ArtWork2,
+  ArtWork3,
+  ArtWork4,
+  ArtWork5,
+  ArtWork6,
+  ArtWork7,
+  ArtWork8,
+} from "@/components/assets";
+const Page = () => {
+  let data = [
+    {
+      id: 1,
+      img: ArtWork1,
+      title: "Artwork Name",
+      subTitle: "Abla et Antar",
+      text: "Oil on Canvas - 110 x 50 cm",
+    },
+    {
+      id: 2,
+      img: ArtWork2,
+      title: "Artwork Name",
+      subTitle: "Abla et Antar",
+      text: "Material - Size",
+    },
+    {
+      id: 3,
+      img: ArtWork3,
+      title: "Artwork Name",
+      subTitle: "Abla et Antar",
+      text: "Material - Size",
+    },
+    {
+      id: 4,
+      img: ArtWork4,
+      title: "Artwork Name",
+      subTitle: "Abla et Antar",
+      text: "Material - Size",
+    },
+    {
+      id: 5,
+      img: ArtWork5,
+      title: "Artwork Name",
+      subTitle: "Abla et Antar",
+      text: "Material - Size",
+    },
+    {
+      id: 6,
+      img: ArtWork6,
+      title: "Artwork Name",
+      subTitle: "Abla et Antar",
+      text: "Material - Size",
+    },
+    {
+      id: 7,
+      img: ArtWork7,
+      title: "Artwork Name",
+      subTitle: "Abla et Antar",
+      text: "Material - Size",
+    },
+    {
+      id: 8,
+      img: ArtWork8,
+      title: "Artwork Name",
+      subTitle: "Abla et Antar",
+      text: "Material - Size",
+    },
+  ];
+  return <PageUI data={data} />;
 };
 
-export default page;
+export default Page;

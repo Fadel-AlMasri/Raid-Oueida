@@ -19,7 +19,7 @@
   font-style: italic;
   font-size: 80px;
   line-height: 96px;
-  letter-spacing: -0.25;
+  letter-spacing: -0.25px;
 }
 .displayMedium {
   font-weight: 600;
@@ -34,20 +34,20 @@
   line-height: 47.99px;
 }
 /* Title */
-.titleLargeSpaced {
+.titleLargeSpacedLight {
   font-family: "Nexa";
   font-weight: 100;
   font-size: 26px;
   line-height: 34px;
   letter-spacing: 31%;
 }
-.titleLarge {
+.titleLargeLight {
   font-family: "Nexa";
   font-weight: 100;
   font-size: 26px;
   line-height: 34px;
 }
-.titleMedium {
+.titleMediumLight {
   font-family: "Nexa";
   font-weight: 100;
   font-size: 22px;
@@ -84,44 +84,48 @@
   line-height: 20px;
   letter-spacing: 2px;
 }
-.labelLarge {
+.labelLargeLight {
   font-family: "Nexa";
   font-weight: 100;
   font-size: 18px;
   line-height: 20px;
   letter-spacing: 2px;
 }
-.labelSmall {
+.labelSmallBold {
   font-family: "Nexa";
   font-weight: 900;
   font-size: 12px;
   line-height: 20px;
 }
 /* Body */
-.bodyLarge {
+.bodyLargeLight {
   font-family: "Nexa";
   font-weight: 100;
   font-size: 22px;
   line-height: 32px;
   letter-spacing: 0.25px;
 }
-.bodyMedium {
+.bodyMediumLight {
   font-family: "Nexa";
   font-weight: 100;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.25px;
 }
-.bodySmall {
+.bodySmallLight {
   font-family: "Nexa";
   font-weight: 100;
   font-size: 12px;
   line-height: 20px;
   letter-spacing: 0.25px;
 }
+.borderColor {
+  border-style: solid;
+  border-color: #fcfcfe;
+}
 @layer components {
   /* Text */
-  .textPrimary {
+  .onPrimary {
     @apply text-neutral-50;
   }
   .textHover {
@@ -146,15 +150,4 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-}
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
 }

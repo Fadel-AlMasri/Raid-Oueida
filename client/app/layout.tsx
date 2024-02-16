@@ -30,7 +30,7 @@ export default function RootLayout({
             <div>
               <Navbar />
             </div>
-            {children}
+            <div className="surfacePrimary h-full">{children}</div>
             <div>
               <Footer />
             </div>
