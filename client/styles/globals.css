@@ -1,43 +1,91 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400..900&display=swap");
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url("../public/Fonts/Playfair/PlayfairDisplay-BoldItalic.ttf")
+    format("truetype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Playfair Display";
+  src: url("../public/Fonts/Playfair/PlayfairDisplay-SemiBoldItalic.ttf")
+    format("truetype");
+  font-weight: 600;
+}
 
 @font-face {
   font-family: "Nexa";
-  src: url("../public/Fonts/Nexa-ExtraLight.ttf") format("truetype");
+  src: url("../public/Fonts/Nexa/Nexa-ExtraLight.ttf") format("truetype");
   font-weight: 100;
 }
 
 @font-face {
   font-family: "Nexa";
-  src: url("../public/Fonts/Nexa-Heavy.ttf") format("truetype");
+  src: url("../public/Fonts/Nexa/Nexa-Heavy.ttf") format("truetype");
   font-weight: 900;
 }
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  background-color: #181818;
+}
+/* Logo */
+/* .LogoDesktop {
+  font-family: "Nexa";
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 45.48px;
+}
+.LogoMobile {
+  font-family: "Nexa";
+  font-weight: 900;
+  font-size: 21.33px;
+  line-height: 32.34px;
+} */
 /* Display */
+/* 
 .displayLarge {
+  font-family: "Playfair Display";
   font-weight: 700;
   font-style: italic;
   font-size: 80px;
   line-height: 96px;
   letter-spacing: -0.25px;
 }
+
 .displayMedium {
+  font-family: "Playfair Display";
   font-weight: 600;
   font-style: italic;
   font-size: 62px;
   line-height: 80px;
 }
+
 .displaySmall {
+  font-family: "Playfair Display";
   font-weight: 600;
   font-style: italic;
   font-size: 36px;
   line-height: 47.99px;
-}
+} */
+
 /* Title */
-.titleLargeSpacedLight {
+/* .titleLargeSpacedLight {
   font-family: "Nexa";
   font-weight: 100;
-  font-size: 26px;
+  font-size: 26px !important;
   line-height: 34px;
   letter-spacing: 31%;
 }
@@ -47,6 +95,7 @@
   font-size: 26px;
   line-height: 34px;
 }
+
 .titleMediumLight {
   font-family: "Nexa";
   font-weight: 100;
@@ -60,9 +109,9 @@
   font-size: 22px;
   line-height: 28px;
   letter-spacing: 0.1px;
-}
+} */
 /*Label */
-.labelXLargeBold {
+/* .labelXLargeBold {
   font-family: "Nexa";
   font-weight: 900;
   font-size: 22px;
@@ -84,6 +133,7 @@
   line-height: 20px;
   letter-spacing: 2px;
 }
+
 .labelLargeLight {
   font-family: "Nexa";
   font-weight: 100;
@@ -96,9 +146,9 @@
   font-weight: 900;
   font-size: 12px;
   line-height: 20px;
-}
+} */
 /* Body */
-.bodyLargeLight {
+/* .bodyLargeLight {
   font-family: "Nexa";
   font-weight: 100;
   font-size: 22px;
@@ -120,9 +170,9 @@
   letter-spacing: 0.25px;
 }
 .borderColor {
-  border-style: solid;
-  border-color: #fcfcfe;
-}
+  border: 4px solid #fcfcfe;
+} */
+
 @layer components {
   /* Text */
   .onPrimary {
@@ -145,9 +195,91 @@
   .outlinePrimary {
     @apply border-neutral-50;
   }
-}
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+  .responsiveWidth {
+    @apply w-screen max-w-[400px] sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl;
+  }
+  /* .myButton {
+    @extend .button-styles;
+  } */
+  .myButton {
+    @apply !font-['Nexa'] !font-thin !text-lg !leading-5 !tracking-widest;
+  }
+
+  .displayLarge {
+    @apply font-playfair font-bold italic text-[80px] leading-[96px] tracking-[-0.25px];
+  }
+
+  .LogoDesktop {
+    @apply font-['Nexa'] font-extrabold text-[30px] leading-[45.48px];
+  }
+
+  .LogoMobile {
+    @apply font-['Nexa'] font-extrabold text-[21.33px] leading-[32.34px];
+  }
+
+  .displayMedium {
+    @apply font-playfair font-semibold italic text-[62px] leading-[80px];
+  }
+
+  .displaySmall {
+    @apply font-playfair font-semibold italic text-[36px] leading-[47.99px];
+  }
+
+  .titleLargeSpacedLight {
+    @apply font-['Nexa'] font-thin text-[26px] leading-[34px];
+    letter-spacing: 4px;
+  }
+
+  .titleLargeLight {
+    @apply font-['Nexa'] font-thin text-[26px] leading-[34px];
+  }
+
+  .titleMediumLight {
+    @apply font-['Nexa'] font-thin text-[22px] leading-[32px];
+    letter-spacing: 0.15rem;
+  }
+
+  .titleSmallBold {
+    @apply font-['Nexa'] font-extrabold text-[22px] leading-[28px];
+    letter-spacing: 0.1px;
+  }
+
+  .labelXLargeBold {
+    @apply font-['Nexa'] font-extrabold text-[22px] leading-[28px];
+    letter-spacing: 2px;
+  }
+
+  .labelXLargeLight {
+    @apply font-['Nexa'] font-thin text-[22px] leading-[28px];
+    letter-spacing: 2px;
+  }
+
+  .labelLargeBold {
+    @apply font-['Nexa'] font-extrabold text-[18px] leading-[20px];
+    letter-spacing: 2px;
+  }
+
+  .labelLargeLight {
+    @apply font-['Nexa'] font-thin text-[18px] leading-[20px];
+    letter-spacing: 2px;
+  }
+
+  .labelSmallBold {
+    @apply font-['Nexa'] font-extrabold text-[12px] leading-[20px];
+  }
+
+  .bodyLargeLight {
+    @apply font-['Nexa'] font-thin text-[22px] leading-[32px];
+    letter-spacing: 0.25px;
+  }
+
+  .bodyMediumLight {
+    @apply font-['Nexa'] font-thin text-[16px] leading-[24px];
+    letter-spacing: 0.25px;
+  }
+
+  .bodySmallLight {
+    @apply font-['Nexa'] font-thin text-[12px] leading-[20px];
+    letter-spacing: 0.25px;
+  }
 }

@@ -1,0 +1,18 @@
+{
+  "Hero": {
+    "title": "The Art of Riad Oueida",
+    "description": "Riad Oueida is a visual artist specializing in painting, sculpture, engraving, ceramics, tapestry, mosaic and restoration.",
+    "button": "Go To Artwork"
+  },
+  "About": {
+    "title": "About",
+    "description": "Riad had a diploma in fine art from Lyon, France and a high specialization diploma in engraving from the school of fine arts in Clermont-Ferrand, France.",
+    "awards": "Awards",
+    "completedProjects": "Completed Projects",
+    "soloExhibitions": "Solo Exhibitions"
+  },
+  "Artwork": {
+    "title": "Artwork",
+    "subTitle": "Portfolio"
+  }
+}

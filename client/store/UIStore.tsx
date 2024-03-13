@@ -1,7 +1,7 @@
 import { create } from 'zustand';
 
 type UIStoreState = {
-  action: 'customers';
+  action: 'customers'|'test';
 };
 
 type UIStoreActions = {
@@ -11,7 +11,7 @@ type UIStoreActions = {
 const useUIStore = create<UIStoreState & UIStoreActions>((set) => ({
   action: 'customers',
 
-  setAction: (action: 'customers') => set({ action }),
+  setAction: (action:UIStoreState['action']) => set({ action }),
 }));
 
 export default useUIStore;

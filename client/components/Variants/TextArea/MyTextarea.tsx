@@ -12,7 +12,7 @@ export const MyTextarea = extendVariants(Textarea, {
         base: ["justify-start h-full "],
         label: [""],
         inputWrapper: [
-          "bg-neutral-200 data-[hover=true]:bg-neutral-200 group-data-[focus=true]:bg-neutral-200",
+          "font-['Nexa'] font-thin text-xl tracking-[2px] bg-neutral-200 data-[hover=true]:bg-neutral-200 group-data-[focus=true]:bg-neutral-200",
         ],
         input: [
           "text-white",

@@ -7,7 +7,7 @@ export const MyInput = extendVariants(Input, {
     color: {
       contact: {
         inputWrapper: [
-          "bg-neutral-200 data-[hover=true]:bg-neutral-200 group-data-[focus=true]:bg-neutral-200",
+          " font-['Nexa'] font-thin text-xl tracking-[2px] bg-neutral-200 data-[hover=true]:bg-neutral-200 group-data-[focus=true]:bg-neutral-200",
         ],
         innerWrapper: [""],
         input: ["text-white"],
@@ -32,8 +32,8 @@ export const MyInput = extendVariants(Input, {
         input: "text-small",
       },
       lg: {
-        inputWrapper: "h-unit-12 min-h-unit-12 ",
-        input: "text-medium",
+        inputWrapper: "h-[60px] min-h-unit-12 ",
+        input: "text-medium ",
       },
       xl: {
         inputWrapper: "h-unit-14 min-h-unit-14",
